@@ -1,0 +1,20 @@
+apply plugin: 'java'
+
+version = '1.0'
+
+sourceCompatibility=1.8
+targetCompatibility=1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile 'com.vtence.molecule:molecule:0.8'
+    compile 'org.simpleframework:simple-http:6.0.1'
+    compile 'com.google.code.gson:gson:2.3.1'
+
+    testCompile 'com.vtence.molecule:molecule:0.8:tests'
+    testCompile 'junit:junit:4.12@jar'
+    testCompile 'org.hamcrest:hamcrest-all:1.3'
+}
